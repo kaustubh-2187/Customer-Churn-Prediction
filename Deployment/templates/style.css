@@ -1,0 +1,23 @@
+body {
+    font-family: arial;
+    text-align: center;
+}
+
+.form-div {
+    font-size: 20px;
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    outline: dashed 1px black;
+    height: 80vh;
+}
+
+label {
+    text-align: center;
+    margin: 0 auto;
+}
+
+input {
+    text-align: center;
+    margin: 0 auto;
+}

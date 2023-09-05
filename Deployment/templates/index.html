@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <h1>Customer Churn Prediction</h1>
+
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {% endif %}
+
+    <div class="form-div">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+
+            <label for="customerID">Customer ID</label><br>
+            <input type="text" name="customerID"><br><br>
+    
+            <label for="name">Name</label><br>
+            <input type="text" name="name"><br><br>
+    
+            <label for="age">Age</label><br>
+            <input type="text" name="age"><br><br>
+    
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female">Female <br><br>
+    
+            <label for="sub_len_months">Length of Subscription in Months</label><br>
+            <input type="text" name="sub_len_months"><br><br>
+    
+            <label for="location">Location</label><br>
+            <input type="text" name="location"><br><br>
+    
+            <label for="monthly_bill">Montly Bill</label><br>
+            <input type="text" name="monthly_bill"><br><br>
+    
+            <label for="total_usage">Total Usage in GB</label><br>
+            <input type="text" name="total_usage"><br><br>
+    
+            <input type="submit" value="Predict"><br><br>
+    
+        </form>
+    </div>
+
+</body>
+</html>
